@@ -25,25 +25,13 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
+
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>George's Personal Site</title>
   </head>
 
   <body>
@@ -95,7 +83,8 @@
       >
       <!-- Set Photo Here -->
         <img
-          style="height: 150px; width: 150px"
+          src="images/pfp.JPG"
+          style="height: 200px; width: 185px"
           class="rounded-circle"
           draggable="false"
           id="profilepic"
@@ -104,13 +93,13 @@
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
-          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
+          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm George Vekios
           <span id="name"></span>!
         </h4>
       </div>
       <div class="row mx-auto">
         <h5 class="h5 mx-auto text-center text-opacity-75 text-primary">
-          Information Science & Technology Student at Temple University
+          Information Science & Technology Senior at Temple University
         </h5>
       </div>
       <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
